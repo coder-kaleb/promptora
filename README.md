@@ -221,7 +221,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 }
 
 .orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-blue-500 via-orange-600 to-green-500 bg-clip-text text-transparent;
 }
 
 .green_gradient {

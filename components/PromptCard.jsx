@@ -66,12 +66,22 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
       </div>
 
       <p className='my-4 font-satoshi text-sm text-gray-700'>{post.prompt}</p>
+      <div className="flex justify-between">
       <p
         className='font-inter text-sm blue_gradient cursor-pointer'
         onClick={() => handleTagClick && handleTagClick(post.tag)}
       >
         #{post.tag}
       </p>
+      <Image
+          src='/assets/icons/like.svg'
+          alt='logo'
+          width={15}
+          height={15}
+          className='object-contain cursor-pointer'
+        />
+      </div>
+      
 
       {session?.user.id === post.creator._id && pathName === "/profile" && (
         <div className='mt-5 flex-center gap-4 border-t border-gray-100 pt-3'>
